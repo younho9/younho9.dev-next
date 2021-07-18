@@ -1,8 +1,13 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   settings: {
-    react: {
+    'react': {
       version: 'detect', // detect react version
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
   env: {
@@ -19,6 +24,7 @@ module.exports = {
   ],
   plugins: ['prettier'],
   rules: {
+    'import/no-unresolved': 'off',
     'import/order': [
       'error',
       {
