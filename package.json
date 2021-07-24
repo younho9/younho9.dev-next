@@ -6,6 +6,7 @@
   "keywords": [
     "gatsby"
   ],
+  "license": "MIT",
   "author": "younho9 <younho9.choo@gmail.com>",
   "scripts": {
     "dev": "gatsby develop",
