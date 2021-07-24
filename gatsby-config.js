@@ -16,6 +16,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-typegen',
+      options: {
+        outputPath: `src/__generated__/gatsby-types.d.ts`,
+      },
+    },
     'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-source-filesystem',
@@ -33,6 +39,15 @@ module.exports = {
       },
       __key: 'pages',
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: './content/blog/',
+      },
+      __key: 'blog',
+    },
+    'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
   ],
 };

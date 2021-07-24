@@ -126,7 +126,7 @@ const links = [
 ];
 
 // markup
-const IndexPage = () => {
+const IndexPage = (): JSX.Element => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
