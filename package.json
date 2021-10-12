@@ -7,7 +7,7 @@
     "gatsby"
   ],
   "license": "MIT",
-  "author": "younho9 <younho9.choo@gmail.com>",
+  "author": "Younho Choo <yo+github@younho9.com>",
   "scripts": {
     "dev": "gatsby develop",
     "start": "gatsby develop",
